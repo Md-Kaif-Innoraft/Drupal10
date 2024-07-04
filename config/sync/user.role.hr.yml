@@ -1,0 +1,31 @@
+uuid: 4eb1b015-323f-4366-8e42-5736bf3a3998
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_details
+    - node.type.salary_processed
+    - taxonomy.vocabulary.user_role
+  module:
+    - node
+    - taxonomy
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'create salary_details content'
+  - 'create salary_processed content'
+  - 'delete any salary_details content'
+  - 'delete any salary_processed content'
+  - 'delete own salary_details content'
+  - 'delete own salary_processed content'
+  - 'delete salary_details revisions'
+  - 'delete salary_processed revisions'
+  - 'edit any salary_processed content'
+  - 'edit own salary_processed content'
+  - 'edit terms in user_role'
+  - 'revert salary_details revisions'
+  - 'revert salary_processed revisions'
+  - 'view salary_details revisions'
+  - 'view salary_processed revisions'

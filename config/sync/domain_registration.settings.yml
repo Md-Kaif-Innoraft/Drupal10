@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 0xE4emSSHTVKb88WL3yN2IahuH23p8VNAXMZNux6BKs
+method: 0
+pattern: "*innoraft.com\r\ninnoraft.com\r\n"
+message: 'Only users with an innoraft domain can register for this site.'
+actions: null
+form_build_id: form-WiTeHKX-GI62aIR58xQD-d-dWNEG2B8AUc4MYMAy_tg
+form_token: EBnjnOBk7y7PqzY0yAtrjRJtZs0Ui8m9hgiICxQkYYw
+form_id: domain_registration_admin_form

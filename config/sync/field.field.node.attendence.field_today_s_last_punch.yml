@@ -1,0 +1,19 @@
+uuid: 47b065da-73b9-4cc3-9fbb-a2a3cfdc01da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_today_s_last_punch
+    - node.type.attendence
+id: node.attendence.field_today_s_last_punch
+field_name: field_today_s_last_punch
+entity_type: node
+bundle: attendence
+label: "Today's Last Punch"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,9 @@
+uuid: d7fdea31-e9f5-43c4-a248-eef093e6122c
+langcode: en
+status: true
+dependencies: {  }
+name: 'User Role'
+vid: user_role
+description: null
+weight: 0
+new_revision: false

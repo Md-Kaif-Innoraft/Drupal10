@@ -1,0 +1,140 @@
+uuid: 178571b6-27d6-41ff-8ca0-abe6a488e555
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_employee_number
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_name
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_user_role
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          4bcedfda-ab69-4a41-8e98-f68f72542545:
+            uuid: 4bcedfda-ab69-4a41-8e98-f68f72542545
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          fc105550-86d6-4d83-9058-ec3302e9bb6a:
+            uuid: fc105550-86d6-4d83-9058-ec3302e9bb6a
+            region: second
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c823911b-8996-42c4-b914-03c844c6c99e:
+            uuid: c823911b-8996-42c4-b914-03c844c6c99e
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_employee_number'
+              label: 'Employee Number'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0291c6a2-4e56-423c-b40e-53e8d4827ed3:
+            uuid: 0291c6a2-4e56-423c-b40e-53e8d4827ed3
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_role'
+              label: 'User Role'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_employee_number: true
+  field_facebook: true
+  field_linkedin: true
+  field_name: true
+  field_twitter: true
+  field_user_role: true
+  member_for: true

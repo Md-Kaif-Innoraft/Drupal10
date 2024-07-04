@@ -1,0 +1,59 @@
+uuid: 1b13948f-ee47-46af-814c-c802d8104aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_details.field_basic
+    - field.field.node.salary_details.field_employee_name
+    - field.field.node.salary_details.field_hra
+    - field.field.node.salary_details.field_special_allowances
+    - field.field.node.salary_details.field_user_role
+    - field.field.node.salary_details.field_ytd_tax
+    - node.type.salary_details
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4030a8e8-4363-447b-bdbc-1c9514c97ed3:
+            uuid: 4030a8e8-4363-447b-bdbc-1c9514c97ed3
+            region: content
+            configuration:
+              id: 'extra_field_block:node:salary_details:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.salary_details.teaser
+targetEntityType: node
+bundle: salary_details
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic: true
+  field_employee_name: true
+  field_hra: true
+  field_special_allowances: true
+  field_user_role: true
+  field_ytd_tax: true

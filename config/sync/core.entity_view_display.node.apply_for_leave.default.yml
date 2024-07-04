@@ -1,0 +1,39 @@
+uuid: 326b989b-7675-430b-bb75-a7289175d325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apply_for_leave.body
+    - field.field.node.apply_for_leave.field_date
+    - node.type.apply_for_leave
+  module:
+    - datetime
+    - text
+    - user
+id: node.apply_for_leave.default
+targetEntityType: node
+bundle: apply_for_leave
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

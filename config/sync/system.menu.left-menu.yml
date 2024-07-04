@@ -1,0 +1,8 @@
+uuid: cfd9cf9a-14be-4e6c-a843-ea1561757cb8
+langcode: en
+status: true
+dependencies: {  }
+id: left-menu
+label: 'Left Menu'
+description: ''
+locked: false

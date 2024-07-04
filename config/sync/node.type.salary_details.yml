@@ -1,0 +1,18 @@
+uuid: e27bfc6e-f936-4dfc-92b4-a9fe2f92bd32
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Salary Details'
+type: salary_details
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

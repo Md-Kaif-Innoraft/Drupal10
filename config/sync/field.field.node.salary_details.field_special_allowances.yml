@@ -1,0 +1,23 @@
+uuid: 7786bbef-27df-4745-95b1-f2724a2f49f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_allowances
+    - node.type.salary_details
+id: node.salary_details.field_special_allowances
+field_name: field_special_allowances
+entity_type: node
+bundle: salary_details
+label: 'Special Allowances '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 100
+  prefix: ''
+  suffix: 'K /  Year'
+field_type: integer

@@ -1,0 +1,204 @@
+uuid: 76f117d7-114d-4bc5-955b-69c60c26329b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_details.field_basic
+    - field.field.node.salary_details.field_employee_name
+    - field.field.node.salary_details.field_hra
+    - field.field.node.salary_details.field_special_allowances
+    - field.field.node.salary_details.field_user_role
+    - field.field.node.salary_details.field_ytd_tax
+    - node.type.salary_details
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a20bc793-c086-4162-9a2b-bcbca01948e3:
+            uuid: a20bc793-c086-4162-9a2b-bcbca01948e3
+            region: content
+            configuration:
+              id: 'extra_field_block:node:salary_details:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          b1db2f10-0f62-4971-b576-0d06212c55f2:
+            uuid: b1db2f10-0f62-4971-b576-0d06212c55f2
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_user_role'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          da07bb73-3bb2-4f59-a1b8-38839f5602e5:
+            uuid: da07bb73-3bb2-4f59-a1b8-38839f5602e5
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_basic'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          76606001-1af1-4b4a-960a-07fcf3081a94:
+            uuid: 76606001-1af1-4b4a-960a-07fcf3081a94
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_hra'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          069f0c64-f6e2-44ff-a407-e444a9c06753:
+            uuid: 069f0c64-f6e2-44ff-a407-e444a9c06753
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_special_allowances'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          9aa0da8e-8c27-46a5-9fcb-b29dc32edfdc:
+            uuid: 9aa0da8e-8c27-46a5-9fcb-b29dc32edfdc
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_ytd_tax'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          9c3ca613-874c-4307-b86a-be8f75176596:
+            uuid: 9c3ca613-874c-4307-b86a-be8f75176596
+            region: content
+            configuration:
+              id: 'field_block:node:salary_details:field_employee_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.salary_details.default
+targetEntityType: node
+bundle: salary_details
+mode: default
+content:
+  field_basic:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_hra:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_special_allowances:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_user_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_ytd_tax:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

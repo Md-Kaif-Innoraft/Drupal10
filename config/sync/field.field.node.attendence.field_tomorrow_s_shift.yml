@@ -1,0 +1,29 @@
+uuid: d443e60e-ad3d-4de8-9988-5ce3c0167a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tomorrow_s_shift
+    - node.type.attendence
+    - taxonomy.vocabulary.shifts
+id: node.attendence.field_tomorrow_s_shift
+field_name: field_tomorrow_s_shift
+entity_type: node
+bundle: attendence
+label: "Tomorrow's Shift"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shifts: shifts
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

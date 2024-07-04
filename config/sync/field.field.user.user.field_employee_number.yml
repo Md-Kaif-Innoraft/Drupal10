@@ -1,0 +1,20 @@
+uuid: 4f534595-5f0b-4212-9894-c9051118ddf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_employee_number
+  module:
+    - user
+id: user.user.field_employee_number
+field_name: field_employee_number
+entity_type: user
+bundle: user
+label: 'Employee Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
