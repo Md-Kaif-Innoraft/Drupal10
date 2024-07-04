@@ -1,0 +1,26 @@
+uuid: acdf2861-5ccc-4fdb-b59f-9315051c1b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.attendence.field_swiped_unswiped
+    - field.field.node.attendence.field_today_s_last_punch
+    - field.field.node.attendence.field_tomorrow_s_shift
+    - node.type.attendence
+  module:
+    - user
+id: node.attendence.teaser
+targetEntityType: node
+bundle: attendence
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_swiped_unswiped: true
+  field_today_s_last_punch: true
+  field_tomorrow_s_shift: true

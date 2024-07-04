@@ -1,0 +1,24 @@
+uuid: 1321d5e6-9183-46fa-be22-d75976e933ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.apply_for_leave
+  module:
+    - text
+id: node.apply_for_leave.body
+field_name: body
+entity_type: node
+bundle: apply_for_leave
+label: Reason
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

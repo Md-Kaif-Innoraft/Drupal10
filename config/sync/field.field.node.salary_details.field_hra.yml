@@ -1,0 +1,23 @@
+uuid: 4cf107cb-08da-4c75-98a6-3c3fb32f48d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hra
+    - node.type.salary_details
+id: node.salary_details.field_hra
+field_name: field_hra
+entity_type: node
+bundle: salary_details
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 100
+  prefix: ''
+  suffix: 'K /  Year'
+field_type: integer

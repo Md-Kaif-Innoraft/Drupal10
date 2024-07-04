@@ -1,0 +1,96 @@
+uuid: 218f3f96-ae73-4aa1-bfaf-2ef2e9871ab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_processed.field_employee_name
+    - field.field.node.salary_processed.field_month
+    - node.type.salary_processed
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b0286ebc-ec56-4499-b2c6-fb1237c8ebb7:
+            uuid: b0286ebc-ec56-4499-b2c6-fb1237c8ebb7
+            region: content
+            configuration:
+              id: 'extra_field_block:node:salary_processed:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          df055e37-5340-46c5-bed3-be923d3193fd:
+            uuid: df055e37-5340-46c5-bed3-be923d3193fd
+            region: content
+            configuration:
+              id: 'field_block:node:salary_processed:field_employee_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8ca26452-cd21-45bc-b65e-d9855da0cdd7:
+            uuid: 8ca26452-cd21-45bc-b65e-d9855da0cdd7
+            region: content
+            configuration:
+              id: 'field_block:node:salary_processed:field_month'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.salary_processed.default
+targetEntityType: node
+bundle: salary_processed
+mode: default
+content:
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_month:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

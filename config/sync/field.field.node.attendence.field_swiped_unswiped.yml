@@ -1,0 +1,19 @@
+uuid: 8bf66e5b-da73-4e90-a074-3cffda0e3847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_swiped_unswiped
+    - node.type.attendence
+id: node.attendence.field_swiped_unswiped
+field_name: field_swiped_unswiped
+entity_type: node
+bundle: attendence
+label: 'Swiped / Unswiped'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

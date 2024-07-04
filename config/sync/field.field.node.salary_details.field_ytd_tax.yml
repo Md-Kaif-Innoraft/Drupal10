@@ -1,0 +1,23 @@
+uuid: c07f21f8-0b34-4072-9953-4b1d1949a723
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ytd_tax
+    - node.type.salary_details
+id: node.salary_details.field_ytd_tax
+field_name: field_ytd_tax
+entity_type: node
+bundle: salary_details
+label: 'YTD Tax'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

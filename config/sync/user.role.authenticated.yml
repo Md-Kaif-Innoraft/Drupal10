@@ -1,0 +1,42 @@
+uuid: 70da5974-3ef2-423a-bbf7-0890be71d7c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+    - node.type.apply_for_leave
+    - node.type.salary_details
+    - taxonomy.vocabulary.user_role
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - node
+    - search
+    - shortcut
+    - system
+    - taxonomy
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: Employee
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'edit any apply_for_leave content'
+  - 'edit any salary_details content'
+  - 'edit own apply_for_leave content'
+  - 'edit own salary_details content'
+  - 'edit terms in user_role'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format webform_default'

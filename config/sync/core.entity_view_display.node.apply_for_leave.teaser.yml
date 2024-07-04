@@ -1,0 +1,32 @@
+uuid: 026a9278-1346-468d-a054-cd9fc5afde46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.apply_for_leave.body
+    - field.field.node.apply_for_leave.field_date
+    - node.type.apply_for_leave
+  module:
+    - text
+    - user
+id: node.apply_for_leave.teaser
+targetEntityType: node
+bundle: apply_for_leave
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true

@@ -1,0 +1,20 @@
+uuid: b81b7da0-87ff-4d98-a2ad-0f3f0c2d2df6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ytd_tax
+field_name: field_ytd_tax
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
